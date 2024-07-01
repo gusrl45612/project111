@@ -45,7 +45,7 @@ const Footer = () => {
             >
               <Box display="flex" alignItems="center" gap={4}>
                 <Link
-                  href="#"
+                  href="/"
                   color="inherit"
                   variant="body2"
                   underline="hover"
@@ -54,7 +54,7 @@ const Footer = () => {
                   Home
                 </Link>
                 <Link
-                  href="#"
+                  href="company"
                   color="inherit"
                   variant="body2"
                   underline="hover"
@@ -72,7 +72,7 @@ const Footer = () => {
                   Services
                 </Link>
                 <Link
-                  href="#"
+                  href="admin"
                   color="inherit"
                   variant="body2"
                   underline="hover"

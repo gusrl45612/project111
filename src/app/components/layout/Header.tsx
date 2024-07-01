@@ -5,6 +5,8 @@ import Tab from '@mui/material/Tab';
 import React from 'react';
 import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import Link from 'next/link';
+import { SyntheticEvent } from 'react';
 
 const StyledBox = styled(Box)({
   width: '1720px',
@@ -26,20 +28,36 @@ const StyledTab = styled(Tab)({
   alignItems: 'center',
 });
 
-export function Header() {
-  const [value, setValue] = React.useState(0);
+const Header: React.FC = () => {
+  const [value, setValue] = React.useState<number>(0);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (event: SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
   return (
     <StyledBox>
       <Tabs value={value} onChange={handleChange} centered>
-        <StyledTab label="회사소개" />
-        <StyledTab label="시공사례" />
-        <StyledTab label="시공상담" />
-        <StyledTab label="고객후기" />
+        <StyledTab
+          label="회사소개"
+          component={Link}
+          href="/company"
+        />
+        <StyledTab
+          label="시공사례"
+          component={Link}
+          href="/portfolio"
+        />
+        <StyledTab
+          label="시공상담"
+          component={Link}
+          href="/consult"
+        />
+        <StyledTab
+          label="고객후기"
+          component={Link}
+          href="/reviews"
+        />
       </Tabs>
     </StyledBox>
   );

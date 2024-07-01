@@ -1,15 +1,14 @@
 import type { ReactNode } from 'react';
+import Header from './layout/Header';
+import Footer from './layout/Footer';
 
-interface LayoutProps {
-  children: ReactNode;
-}
-
-const AdminLayout = ({ children }: LayoutProps) => {
+const AdminLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <div>
-      <header>어드민 헤더</header>
-      <main>{children}</main>
-    </div>
+      <>
+        <Header/>
+        <main>{children}</main>
+        <Footer/>
+      </>
   );
 };
 
