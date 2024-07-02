@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 // components
 // import Profile from './Profile';
-import { IconBellRinging, IconMenu } from '@tabler/icons-react';
+// import { IconBellRinging, IconMenu } from '@tabler/icons-react';
 
 interface ItemType {
   toggleMobileSidebar:  (event: React.MouseEvent<HTMLElement>) => void;
@@ -45,7 +45,7 @@ const AdminHeader = ({toggleMobileSidebar}: ItemType) => {
             },
           }}
         >
-          <IconMenu width="20" height="20" />
+          {/* <IconMenu width="20" height="20" /> */}
         </IconButton>
 
 
@@ -56,18 +56,18 @@ const AdminHeader = ({toggleMobileSidebar}: ItemType) => {
           aria-controls="msgs-menu"
           aria-haspopup="true"
         >
-          <Badge variant="dot" color="primary">
-            <IconBellRinging size="21" stroke="1.5" />
+          <Badge>
+            {/* <IconBellRinging size="21" stroke="1.5" /> */}
           </Badge>
 
         </IconButton>
         <Box flexGrow={1} />
-        <Stack spacing={1} direction="row" alignItems="center">
+        {/* <Stack spacing={1} direction="row" alignItems="center">
           <Button variant="contained" component={Link} href="/authentication/login"   disableElevation color="primary" >
             Login
           </Button>
-          {/* <Profile /> */}
-        </Stack>
+          <Profile />
+        </Stack> */}
       </ToolbarStyled>
     </AppBarStyled>
   );

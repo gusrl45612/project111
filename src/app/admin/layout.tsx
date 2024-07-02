@@ -1,6 +1,6 @@
 'use client';
 import type { ReactNode } from "react";
-import AdminHeader from "./layout/Header";
+import AdminHeader from "./layout/header/Header";
 import { styled, Container, Box } from "@mui/material";
 import React, { useState } from "react";
 import Sidebar from "./layout/sidebar/Sidebar";
