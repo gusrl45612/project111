@@ -1,75 +1,61 @@
 import {
-  IconAperture,
-  IconCopy,
   IconLayoutDashboard,
-  IconLogin,
-  IconMoodHappy,
-  IconTypography,
-  IconUserPlus,
+  IconUser,
+  IconTools,
+  IconMessages,
+  IconUsers,
+  IconBuilding,
 } from "@tabler/icons-react";
 
 import { uniqueId } from "lodash";
 
 const Menuitems = [
   {
-    navlabel: true,
-    subheader: "Home",
-  },
-
-  {
     id: uniqueId(),
-    title: "Dashboard",
+    title: "메인",
     icon: IconLayoutDashboard,
     href: "/",
   },
-  {
-    navlabel: true,
-    subheader: "Utilities",
-  },
+  // {
+  //   navlabel: true,
+  //   subheader: "Utilities",
+  // },
   {
     id: uniqueId(),
-    title: "Typography",
-    icon: IconTypography,
+    title: "고객관리",
+    icon: IconUser,
     href: "/utilities/typography",
   },
   {
     id: uniqueId(),
-    title: "Shadow",
-    icon: IconCopy,
+    title: "시공관리",
+    icon: IconTools,
     href: "/utilities/shadow",
   },
-  {
-    navlabel: true,
-    subheader: "Auth",
-  },
+  // {
+  //   navlabel: true,
+  //   subheader: "Auth",
+  // },
   {
     id: uniqueId(),
-    title: "Login",
-    icon: IconLogin,
+    title: "메세지관리",
+    icon: IconMessages,
     href: "/authentication/login",
   },
   {
     id: uniqueId(),
-    title: "Register",
-    icon: IconUserPlus,
+    title: "사원관리",
+    icon: IconUsers,
     href: "/authentication/register",
   },
   {
-    navlabel: true,
-    subheader: "Extra",
-  },
-  {
     id: uniqueId(),
-    title: "Icons",
-    icon: IconMoodHappy,
-    href: "/icons",
+    title: "업체관리",
+    icon: IconBuilding,
+    href: "/authentication/register",
   },
-  {
-    id: uniqueId(),
-    title: "Sample Page",
-    icon: IconAperture,
-    href: "/sample-page",
-  },
+
+
 ];
 
 export default Menuitems;
