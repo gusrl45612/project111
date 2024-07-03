@@ -5,6 +5,7 @@ import {
   IconMessages,
   IconUsers,
   IconBuilding,
+  IconTool,
 } from "@tabler/icons-react";
 
 import { uniqueId } from "lodash";
@@ -14,7 +15,7 @@ const Menuitems = [
     id: uniqueId(),
     title: "메인",
     icon: IconLayoutDashboard,
-    href: "/",
+    href: "/admin",
   },
   // {
   //   navlabel: true,
@@ -24,13 +25,19 @@ const Menuitems = [
     id: uniqueId(),
     title: "고객관리",
     icon: IconUser,
-    href: "/utilities/typography",
+    href: "/admin/customer",
+  },
+  {
+    id: uniqueId(),
+    title: "AS 관리",
+    icon: IconTool,
+    href: "/admin/customer/as",
   },
   {
     id: uniqueId(),
     title: "시공관리",
     icon: IconTools,
-    href: "/utilities/shadow",
+    href: "/admin/construction",
   },
   // {
   //   navlabel: true,
@@ -40,19 +47,19 @@ const Menuitems = [
     id: uniqueId(),
     title: "메세지관리",
     icon: IconMessages,
-    href: "/authentication/login",
+    href: "/admin/message",
   },
   {
     id: uniqueId(),
     title: "사원관리",
     icon: IconUsers,
-    href: "/authentication/register",
+    href: "/admin/employee",
   },
   {
     id: uniqueId(),
     title: "업체관리",
     icon: IconBuilding,
-    href: "/authentication/register",
+    href: "/admin/company",
   },
 
 

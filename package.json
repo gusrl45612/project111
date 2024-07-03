@@ -11,6 +11,10 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@fullcalendar/core": "^6.1.14",
+    "@fullcalendar/daygrid": "^6.1.14",
+    "@fullcalendar/interaction": "^6.1.14",
+    "@fullcalendar/react": "^6.1.14",
     "@mui/icons-material": "^5.15.20",
     "@mui/material": "^5.15.20",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
@@ -21,6 +25,7 @@
     "node-sass": "^9.0.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-quill": "^2.0.0",
     "sass": "^1.77.6",
     "styled-components": "^6.1.11",
     "swiper": "^11.1.4"
