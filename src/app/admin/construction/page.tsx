@@ -8,17 +8,21 @@ import 'react-quill/dist/quill.snow.css';
 
 const AdminConstruction = () => {
   const [title, setTitle] = useState('');
+  const [subtitle, setSubtitle] = useState('');
   const [content, setContent] = useState('');
+  
 
-  const handleRegister = () => {
+  const handleUpload = () => {
     // 등록 로직
     console.log("Title:", title);
+    console.log("Subtitle:", subtitle);
     console.log("Content:", content);
   };
 
   return (
     <Container>
       <Box mt={4}>
+        <Typography variant="h6">제목을 입력하세요</Typography>
         <TextField
           fullWidth
           variant="outlined"
@@ -26,15 +30,25 @@ const AdminConstruction = () => {
           onChange={(e) => setTitle(e.target.value)}
           margin="normal"
         />
+        <Typography variant="h6">부제목을 입력하세요</Typography>
+        <TextField
+          fullWidth
+          variant="outlined"
+          value={subtitle}
+          onChange={(e) => setSubtitle(e.target.value)}
+          margin="normal"
+        />
         <ReactQuill
           value={content}
           onChange={setContent}
           style={{ height: '300px', marginBottom: '40px' }}
-        />
-        <Button variant="contained" color="primary" onClick={handleRegister}>
-          등록
+        /> 
+        <Box>
+        <Button variant="contained" color="primary" onClick={handleUpload}>
+          업로드
         </Button>
-      </Box>
+        </Box>
+     </Box>
     </Container>
   );
 };
